@@ -1,0 +1,5 @@
+{
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/7f05c90d-9893-4a4e-8e61-651a88e74870/resourceGroups/EmployeeSalCalculation_BackEnd/providers/Microsoft.Web/sites/calculator-front-end",
+  "appService.deploySubpath": "."
+}

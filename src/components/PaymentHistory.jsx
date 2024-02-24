@@ -13,7 +13,6 @@ import {
 export default function PaymentHistory() {
   const nav = useNavigate();
   const [activeSearches, setActiveSearches] = useState([]);
-  const [empID, setEMPID] = useState("");
   const [paymentDetails, setPaymentDetails] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -33,7 +32,6 @@ export default function PaymentHistory() {
 
   const handleItemClick = async (id) => {
     const selectedEmpID = activeSearches[id].empID;
-    setEMPID(selectedEmpID);
 
     try {
       const res = await getAllEmployeeSalaryByID(selectedEmpID);
